@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Lógica em 7 Dias — Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aprenda lógica de programação do zero em 7 dias com exercícios práticos.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">Lógica7</a>
+      <nav aria-label="menu principal">
+        <ul class="menu">
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-sm" href="#cadastro">Quero me cadastrar</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="hero container" id="inicio">
+      <div class="hero-content">
+        <h1>Aprenda Lógica de Programação em 7 dias</h1>
+        <p>Comece do zero, pratique com desafios e ganhe confiança para avançar para qualquer linguagem.</p>
+        <a class="btn" href="#cadastro">Quero me cadastrar</a>
+        <p class="trust">Mais de 5.000 alunos já aprenderam do zero.</p>
+      </div>
+      <div class="hero-illus" aria-hidden="true"></div>
+    </section>
+  </header>
+
+  <main>
+    <section class="features container" id="beneficios" aria-labelledby="t-beneficios">
+      <h2 id="t-beneficios">Por que este curso</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Do zero ao primeiro algoritmo</h3>
+          <p>Comece do básico e evolua rápido com exercícios guiados.</p>
+        </article>
+        <article class="card">
+          <h3>Conteúdo direto</h3>
+          <p>Aprenda o essencial sem distrações, com exemplos claros.</p>
+        </article>
+        <article class="card">
+          <h3>Suporte e comunidade</h3>
+          <p>Tire dúvidas e compartilhe evolução com colegas iniciantes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="social-proof container" aria-labelledby="t-depoimentos">
+      <h2 id="t-depoimentos">Resultados de alunos</h2>
+      <div class="grid-3">
+        <blockquote class="quote">
+          <p>Entendi lógica em uma semana. Hoje sigo para Python.</p>
+          <footer>— Ana, aluna</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Consegui finalmente resolver exercícios sem decorar.</p>
+          <footer>— João, aluno</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>A didática é simples e prática. Recomendo.</p>
+          <footer>— Carla, aluna</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="pricing container" id="planos" aria-labelledby="t-planos">
+      <h2 id="t-planos">Planos</h2>
+      <div class="grid-3">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price">R$ 0</p>
+          <ul class="list">
+            <li>7 aulas gravadas</li>
+            <li>Materiais PDF</li>
+            <li>Desafios básicos</li>
+          </ul>
+          <a class="btn btn-ghost" href="#cadastro">Começar</a>
+        </article>
+        <article class="price-card highlight">
+          <h3>Pro</h3>
+          <p class="price">R$ 79</p>
+          <ul class="list">
+            <li>Tudo do Starter</li>
+            <li>Projetos práticos</li>
+            <li>Mentoria em grupo</li>
+          </ul>
+          <a class="btn" href="#cadastro">Quero o Pro</a>
+        </article>
+        <article class="price-card">
+          <h3>Mentoria</h3>
+          <p class="price">R$ 199</p>
+          <ul class="list">
+            <li>Tudo do Pro</li>
+            <li>Mentoria 1:1</li>
+            <li>Plano de estudos</li>
+          </ul>
+          <a class="btn btn-ghost" href="#cadastro">Falar com time</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq container" id="faq" aria-labelledby="t-faq">
+      <h2 id="t-faq">Perguntas frequentes</h2>
+      <details>
+        <summary>Preciso saber programar?</summary>
+        <p>Não. O curso começa do zero.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo por dia?</summary>
+        <p>De 30 a 60 minutos por aula.</p>
+      </details>
+      <details>
+        <summary>Recebo certificado?</summary>
+        <p>Sim, após concluir os módulos e desafios.</p>
+      </details>
+    </section>
+
+    <section class="signup" id="cadastro" aria-labelledby="t-cadastro">
+      <div class="container">
+        <h2 id="t-cadastro">Cadastre-se</h2>
+        <p>Garanta acesso às aulas e materiais. Envio do formulário desativado nesta oficina.</p>
+        <form class="form" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+          </div>
+          <div class="field">
+            <label for="objetivo">Seu objetivo</label>
+            <select id="objetivo" name="objetivo" required>
+              <option value="" selected disabled>Selecione</option>
+              <option>Entrar em tecnologia</option>
+              <option>Melhorar lógica</option>
+              <option>Preparar para estágio</option>
+            </select>
+          </div>
+          <button type="submit" disabled>Enviar (desativado)</button>
+          <small>Nota: vamos ativar o envio quando houver backend.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2025 Lógica7. Todos os direitos reservados.</p>
+      <nav aria-label="links de rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#planos">Planos</a>
+        <a href="#cadastro">Cadastro</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
